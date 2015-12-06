@@ -1,0 +1,55 @@
+set nocompatible
+set backspace=2
+
+set tabstop=2 shiftwidth=2 expandtab
+
+" set <Leader> key to ,
+let mapleader = ","
+
+" vundle
+filetype off
+set rtp+=~/.vim/bundle/Vundle.vim
+"call vundle#begin()
+
+try
+  call vundle#rc()
+catch
+  echohl Error | echo "Vundle is not installed. " | echohl None
+endtry
+
+Plugin 'gmarik/Vundle.vim'
+Plugin 'scrooloose/nerdtree'
+Plugin 'sickill/vim-monokai'
+
+"call vundle#end()  " required
+filetype plugin indent on " required
+
+" colors
+syntax enable
+" colorscheme monokai
+set t_ut=
+set t_Co=256
+
+set background=dark
+colorscheme base16-railscasts
+
+highlight clear SignColumn
+highlight VertSplit ctermbg=236
+highlight ColorColumn ctermbg=237
+highlight LineNr ctermbg=236 ctermfg=240
+highlight CursorLineNr ctermbg=236 ctermfg=240
+highlight CursorLine ctermbg=236
+highlight StatusLineNC ctermbg=238 ctermfg=0
+highlight StatusLine ctermbg=240 ctermfg=12
+highlight IncSearch ctermbg=3 ctermfg=1
+highlight Search ctermbg=1 ctermfg=3
+highlight Visual ctermbg=3 ctermfg=0
+highlight Pmenu ctermbg=240 ctermfg=12
+highlight PmenuSel ctermbg=3 ctermfg=1
+highlight SpellBad ctermbg=0 ctermfg=1
+
+" nerdTree
+nnoremap <Leader>n :NERDTreeToggle<CR>
+let g:NERDTreeWinPos = "right"
+let g:NERDTreeShowHidden = 1
+let g:NERDTreeQuitOnOpen = 1

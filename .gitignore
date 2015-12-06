@@ -1,0 +1,13 @@
+.emacs.d/
+.irssi/
+.ssh/known_hosts
+.ssh/ids/
+.ssh/id_rsa
+.ssh/id_rsa.pub
+bin/
+tools/
+*.db
+*.swp
+.history
+.lesshst
+.viminfo

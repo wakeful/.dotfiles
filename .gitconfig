@@ -1,0 +1,13 @@
+[user]
+	email = aj@laatu.uk
+        name = AJ
+[alias]
+	s = status
+	l = log --oneline
+	ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
+	ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
+[http]
+	sslVerify = false
+[core]
+	trustctime = false
+	fileMode = false
