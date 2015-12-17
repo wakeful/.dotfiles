@@ -4,6 +4,7 @@
 .ssh/ids/
 .ssh/id_rsa
 .ssh/id_rsa.pub
+.oh-my-zsh/
 .terraform.d/
 bin/
 tools/
@@ -13,3 +14,7 @@ tools/
 .lesshst
 .viminfo
 .Xauthority
+.zcompdump-ht-5.2
+.zsh-update
+.zsh_history
+.zshrc.pre-oh-my-zsh
