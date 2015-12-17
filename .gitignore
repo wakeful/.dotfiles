@@ -4,6 +4,7 @@
 .ssh/ids/
 .ssh/id_rsa
 .ssh/id_rsa.pub
+.terraform.d/
 bin/
 tools/
 *.db
@@ -11,3 +12,4 @@ tools/
 .history
 .lesshst
 .viminfo
+.Xauthority
