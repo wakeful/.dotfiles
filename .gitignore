@@ -1,5 +1,8 @@
 .emacs.d/
+.ghc/
 .irssi/
+.oh-my-zsh-custom/
+.packer.d/
 .ssh/known_hosts
 .ssh/ids/
 .ssh/id_rsa

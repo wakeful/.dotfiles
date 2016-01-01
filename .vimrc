@@ -3,6 +3,11 @@ set backspace=2
 
 set tabstop=2 shiftwidth=2 expandtab
 
+" toggle auto-indenting on paste
+nnoremap <F2> :set invpaste paste?<CR>
+set pastetoggle=<F2>
+set showmode
+
 " set <Leader> key to ,
 let mapleader = ","
 
