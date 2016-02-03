@@ -15,4 +15,8 @@ export LANG=en_US.UTF-8
 
 export EDITOR='vim'
 
-alias tmux='tmux -2'
+alias c="clear"
+alias cd..="cd .."
+alias df="df -Th"
+alias mkdir="mkdir -p"
+alias tmux="tmux -2"
