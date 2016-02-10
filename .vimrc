@@ -61,3 +61,7 @@ nnoremap <Leader>n :NERDTreeToggle<CR>
 let g:NERDTreeWinPos = "right"
 let g:NERDTreeShowHidden = 1
 let g:NERDTreeQuitOnOpen = 1
+
+" search
+set hlsearch
+set ignorecase
