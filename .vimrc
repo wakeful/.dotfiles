@@ -11,6 +11,9 @@ set showmode
 " set <Leader> key to ,
 let mapleader = ","
 
+" 80 char limit
+set colorcolumn=80
+
 " vundle
 filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
