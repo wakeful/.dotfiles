@@ -65,3 +65,6 @@ let g:NERDTreeQuitOnOpen = 1
 " search
 set hlsearch
 set ignorecase
+
+" show invisible characters
+set list
