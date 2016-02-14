@@ -68,3 +68,6 @@ set ignorecase
 
 " show invisible characters
 set list
+
+" show line numbers
+set number
