@@ -6,7 +6,7 @@ ZSH_THEME="ys"
 
 plugins=(git terraform packer)
 
-export PATH="/home/adrian/bin:/sbin:/bin:/usr/sbin:/usr/bin:/usr/games:/usr/local/sbin:/usr/local/bin:/home/adrian/gopro/bin:/home/adrian/tools/terraform/:/home/adrian/tools/packer/"
+export PATH="/home/adrian/bin:/sbin:/bin:/usr/sbin:/usr/bin:/usr/games:/usr/local/sbin:/usr/local/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
