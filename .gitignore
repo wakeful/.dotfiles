@@ -19,7 +19,7 @@ tools/
 .lesshst
 .viminfo
 .Xauthority
-.zcompdump-ht-5.2
+.zcompdump-*
 .zsh-update
 .zsh_history
 .zshrc.pre-oh-my-zsh
