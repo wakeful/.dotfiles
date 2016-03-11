@@ -17,7 +17,7 @@ set colorcolumn=80
 " vundle
 filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
-"call vundle#begin()
+call vundle#begin('~/.vim/plugins')
 
 try
   call vundle#rc()
@@ -29,7 +29,7 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'sickill/vim-monokai'
 
-"call vundle#end()  " required
+call vundle#end()  " required
 filetype plugin indent on " required
 
 " colors

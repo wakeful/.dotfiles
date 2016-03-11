@@ -10,6 +10,7 @@
 .ssh/id_rsa.pub
 .oh-my-zsh/
 .terraform.d/
+.vim/plugins/
 bin/
 laatu/
 tools/
