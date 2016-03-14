@@ -1,4 +1,5 @@
 .ghc/
+.gnupg/
 .irssi/
 .oh-my-zsh-custom/
 .packer.d/
