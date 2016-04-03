@@ -11,8 +11,8 @@ set showmode
 " set <Leader> key to ,
 let mapleader = ","
 
-" 80 char limit
-set colorcolumn=80
+" 79 char limit
+set colorcolumn=79
 
 " vundle
 filetype off
