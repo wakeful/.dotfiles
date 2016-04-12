@@ -3,6 +3,7 @@
 .irssi/
 .oh-my-zsh-custom/
 .packer.d/
+.ssh/authorized_keys
 .ssh/known_hosts
 .ssh/conf.d/
 .ssh/ids/
