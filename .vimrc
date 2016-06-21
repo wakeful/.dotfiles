@@ -11,8 +11,11 @@ set showmode
 " set <Leader> key to ,
 let mapleader = ","
 
-" 79 char limit
-set colorcolumn=79
+" 121 char limit
+set colorcolumn=121
+
+" line wrapping at 120 char
+set textwidth=120
 
 " vundle
 filetype off
