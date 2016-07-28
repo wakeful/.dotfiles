@@ -61,7 +61,7 @@ highlight SpellBad ctermbg=0 ctermfg=1
 
 " nerdTree
 nnoremap <Leader>n :NERDTreeToggle<CR>
-let g:NERDTreeWinPos = "right"
+let g:NERDTreeWinPos = "left"
 let g:NERDTreeShowHidden = 1
 let g:NERDTreeQuitOnOpen = 1
 
