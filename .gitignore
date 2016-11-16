@@ -12,6 +12,7 @@
 .terraform.d/
 .vim/plugins/
 bin/
+go/
 laatu/
 tools/
 *.db
