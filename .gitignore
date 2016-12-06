@@ -30,7 +30,7 @@ tools/
 .rhosts
 .shrc
 .viminfo
-.Xauthority
+.Xauthority*
 .xsession-errors
 .zcompdump-*
 .zsh-update
