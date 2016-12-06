@@ -1,5 +1,8 @@
+.cache/
+.config/
 .ghc/
 .gnupg/
+.local/
 .oh-my-zsh-custom/
 .packer.d/
 .ssh/authorized_keys
@@ -18,9 +21,16 @@ tools/
 *.db
 *.swp
 .history
+.ICEauthority
 .lesshst
+.mail_aliases
+.mailrc
+.profile
+.rhosts
+.shrc
 .viminfo
 .Xauthority
+.xsession-errors
 .zcompdump-*
 .zsh-update
 .zsh_history
