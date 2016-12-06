@@ -3,6 +3,7 @@
 .ghc/
 .gnupg/
 .local/
+.mozilla/
 .oh-my-zsh-custom/
 .packer.d/
 .ssh/authorized_keys
