@@ -1,7 +1,11 @@
+.bundle/
 .cache/
 .config/
+Downloads/
+.gem/
 .ghc/
 .gnupg/
+.java/
 .local/
 .mozilla/
 .oh-my-zsh-custom/
@@ -14,6 +18,7 @@
 .ssh/id_rsa.pub
 .oh-my-zsh/
 .terraform.d/
+.thumbnails/
 .vim/plugins/
 bin/
 go/
@@ -28,6 +33,7 @@ tools/
 .mailrc
 .profile
 .rhosts
+.RubyMine*
 .shrc
 .viminfo
 .Xauthority*
