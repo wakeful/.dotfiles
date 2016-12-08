@@ -19,6 +19,7 @@ Downloads/
 .oh-my-zsh/
 .terraform.d/
 .thumbnails/
+.vagrant.d/
 .vim/plugins/
 bin/
 go/
@@ -31,6 +32,7 @@ tools/
 .lesshst
 .mail_aliases
 .mailrc
+.PhpStorm*
 .profile
 .rhosts
 .RubyMine*
