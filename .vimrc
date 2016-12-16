@@ -59,6 +59,8 @@ highlight Pmenu ctermbg=240 ctermfg=12
 highlight PmenuSel ctermbg=3 ctermfg=1
 highlight SpellBad ctermbg=0 ctermfg=1
 
+hi Normal guibg=NONE ctermbg=NONE
+
 " nerdTree
 nnoremap <Leader>n :NERDTreeToggle<CR>
 let g:NERDTreeWinPos = "left"
