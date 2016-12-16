@@ -2,12 +2,15 @@
 .cache/
 .config/
 Downloads/
+.docker/
 .gem/
 .ghc/
 .gnupg/
 .java/
 .local/
+.macromedia/
 .mozilla/
+.npm/
 .oh-my-zsh-custom/
 .packer.d/
 .ssh/authorized_keys
@@ -22,6 +25,7 @@ Downloads/
 .vagrant.d/
 .vim/plugins/
 bin/
+fontconfig/
 go/
 laatu/
 tools/
@@ -44,3 +48,6 @@ tools/
 .zsh-update
 .zsh_history
 .zshrc.pre-oh-my-zsh
+firefox.core
+xfce4-panel.*
+xfwm4.core
