@@ -11,6 +11,9 @@ set showmode
 " set <Leader> key to ,
 let mapleader = ","
 
+" save file with sudo
+noremap <Leader>w :w !sudo tee % > /dev/null
+
 " 121 char limit
 set colorcolumn=121
 
