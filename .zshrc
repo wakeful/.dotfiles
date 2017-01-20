@@ -22,3 +22,5 @@ alias df="df -Th"
 alias mkdir="mkdir -p"
 alias ssh="cat ~/.ssh/conf.d/* > ~/.ssh/config;ssh"
 alias tmux="tmux -2"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
