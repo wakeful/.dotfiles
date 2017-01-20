@@ -4,7 +4,7 @@ ZSH_CUSTOM=$HOME/.oh-my-zsh-custom
 
 ZSH_THEME="ys"
 
-plugins=(git terraform packer)
+plugins=(docker-machine git terraform packer)
 
 export GOPATH=$HOME/go
 export PATH="$GOPATH/bin:$HOME/bin:/sbin:/bin:/usr/sbin:/usr/bin:/usr/games:/usr/local/sbin:/usr/local/bin"
