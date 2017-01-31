@@ -9,6 +9,7 @@
 .config/
 .dbus/
 .docker/
+.fehbg
 .fontconfig/
 .gem/
 .ghc/

@@ -1,0 +1,96 @@
+set $mod Mod4
+
+font pango:monospace 8
+
+# dmenu
+bindsym $mod+d exec dmenu_run
+
+# focus
+bindsym $mod+h focus left
+bindsym $mod+l focus right
+bindsym $mod+k focus up
+bindsym $mod+j focus down
+
+# move focused container
+bindsym $mod+Shift+h move left
+bindsym $mod+Shift+l move right
+bindsym $mod+Shift+k move up
+bindsym $mod+Shift+j move down
+
+# move focused container to workspace
+bindsym $mod+Shift+1 move container to workspace 1:I
+bindsym $mod+Shift+2 move container to workspace 2:II
+bindsym $mod+Shift+3 move container to workspace 3:III
+bindsym $mod+Shift+4 move container to workspace 4:IV
+bindsym $mod+Shift+5 move container to workspace 5:V
+bindsym $mod+Shift+6 move container to workspace 6:VI
+bindsym $mod+Shift+7 move container to workspace 7:VII
+bindsym $mod+Shift+8 move container to workspace 8:VIII
+bindsym $mod+Shift+9 move container to workspace 9:IX
+bindsym $mod+Shift+0 move container to workspace 10:X
+
+# fullscreen
+bindsym $mod+z fullscreen
+
+# horizontal split
+bindsym $mod+semicolon split h
+
+# vertical split
+bindsym $mod+v split v
+
+# layout
+bindsym $mod+s layout stacking
+bindsym $mod+t layout tabbed
+bindsym $mod+f layout toggle split
+
+# terminal
+bindsym $mod+Return exec xfce4-terminal
+
+# workspace
+bindsym $mod+Tab workspace next
+bindsym $mod+1 workspace 1:I
+bindsym $mod+2 workspace 2:II
+bindsym $mod+3 workspace 3:III
+bindsym $mod+4 workspace 4:IV
+bindsym $mod+5 workspace 5:V
+bindsym $mod+6 workspace 6:VI
+bindsym $mod+7 workspace 7:VII
+bindsym $mod+8 workspace 8:VIII
+bindsym $mod+9 workspace 9:IX
+bindsym $mod+0 workspace 10:X
+
+# exit i3
+bindsym $mod+Shift+e exit
+
+# reload i3
+bindsym $mod+Shift+r restart
+
+# kill focused window
+bindsym $mod+Shift+q kill
+
+# resize
+mode "resize" {
+  bindsym h resize shrink width 2 px or 2 ppt
+  bindsym l resize grow width 2 px or 2 ppt
+  bindsym k resize shrink height 2 px or 2 ppt
+  bindsym j resize grow height 2 px or 2 ppt
+
+  bindsym Return mode "default"
+  bindsym Escape mode "default"
+}
+
+bindsym $mod+r mode "resize"
+
+# boder
+new_window 1pixel
+
+# bar
+bar {
+  position top
+  status_command i3status -c ~/.i3/i3status.conf
+  strip_workspace_numbers yes
+  workspace_buttons yes
+}
+
+exec xcompmgr -c -n
+exec_always --no-startup-id feh --bg-fill ~/laatu/team.png
