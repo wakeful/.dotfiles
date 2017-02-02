@@ -71,6 +71,9 @@ bindsym $mod+Shift+q kill
 # kill focused window using mouse
 bindsym --whole-window $mod+button2 kill
 
+# take screenshot#
+bindsym Print exec xwd -root | convert xwd:- ~/pic-$(date "+%Y-%m-%d-%H-%M-%S").jpg
+
 # resize
 mode "resize" {
   bindsym h resize shrink width 2 px or 2 ppt
