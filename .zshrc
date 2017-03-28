@@ -22,12 +22,12 @@ alias df="df -Th"
 alias mkdir="mkdir -p"
 alias ssh="cat ~/.ssh/conf.d/* > ~/.ssh/config;ssh"
 alias tmux="tmux -2"
-alias vvbox="jq '[.machines[]| {base: .extra_data.box.name, data_path: .local_data_path, name: .name, path: .vagrantfile_path, state: .state}]' ~/.vagrant.d/data/machine-index/index"
+alias vvbox="jq '[.machines|to_entries[]| {base: .value.extra_data.box.name, data_path: .value.local_data_path, id: .key, name: .value.name, path: .value.vagrantfile_path, state: .value.state}]' ~/.vagrant.d/data/machine-index/index"
 
 vv() {
   local line
   local dir
-  line=$(vvbox|jq -r '.[]| .state  + " | " + .path + " | " + .base'| sort -r | column -t | fzf) && dir=$(echo $line|cut -d '|' -f2|sed 's/^ *//;s/ *$//') && cd "$dir"
+  line=$(vvbox|jq -r '.[]| .state  + " | " + .path + " | " + .base + " | " + .id'| sort -r | column -t | fzf) && dir=$(echo $line|cut -d '|' -f2|sed 's/^ *//;s/ *$//') && cd "$dir"
 }
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
