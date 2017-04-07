@@ -27,7 +27,7 @@ alias vvbox="jq '[.machines|to_entries[]| {base: .value.extra_data.box.name, dat
 vv() {
   local line
   local dir
-  line=$(vvbox|jq -r '.[]| [.state, .path, .base, .id]|join(" | ")'| sort -r | column -t | fzf) && dir=$(echo $line|cut -d '|' -f2|sed 's/^ *//;s/ *$//') && cd "$dir"
+  line=$(vvbox|jq -r '.[]| [.state, .path, .name, .base, .id]|join(" | ")'| sort -r | column -t | fzf) && dir=$(echo $line|cut -d '|' -f2|sed 's/^ *//;s/ *$//') && cd "$dir"
 }
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
