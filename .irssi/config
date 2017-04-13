@@ -208,7 +208,6 @@ settings = {
   };
   "fe-text" = { actlist_sort = "refnum"; };
   "fe-common/core" = {
-    bell_beeps = "yes";
     beep_msg_level = "PUBLIC MSGS NOTICES DCC DCCMSGS HILIGHT";
     theme = "furry";
   };
