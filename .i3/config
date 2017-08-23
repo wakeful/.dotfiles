@@ -87,6 +87,9 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
+# i3 lock
+bindsym $mod+Ctrl+l exec i3lock -i ~/Pictures/wallhaven-diablo.png -t -f -p win
+
 # boder
 new_window 1pixel
 
