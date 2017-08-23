@@ -32,4 +32,10 @@ vv() {
   line=$(vvbox|jq -r '.[]| [.state, .path, .name, .base, .id]|join(" | ")'| sort -r | column -t | fzf) && dir=$(echo $line|cut -d '|' -f2|sed 's/^ *//;s/ *$//') && cd "$dir"
 }
 
+function minicert() {
+  for i in $(ls -1 ~/certs); do
+    cat ~/certs/$i | minikube ssh "sudo mkdir -p /etc/docker/certs.d/$i && sudo tee /etc/docker/certs.d/$i/ca.crt";
+  done
+}
+
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
