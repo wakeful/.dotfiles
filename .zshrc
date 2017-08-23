@@ -4,7 +4,9 @@ ZSH_CUSTOM=$HOME/.oh-my-zsh-custom
 
 ZSH_THEME="ys"
 
-plugins=(docker-machine git terraform packer)
+plugins=(aws docker docker-compose docker-machine dotenv git go kubectl packer terraform vagrant zsh-autosuggestions)
+
+ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE=20
 
 export GOPATH=$HOME/go
 export PATH="$GOPATH/bin:$HOME/bin:/sbin:/bin:/usr/sbin:/usr/bin:/usr/games:/usr/local/sbin:/usr/local/bin"
