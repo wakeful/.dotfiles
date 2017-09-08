@@ -11,6 +11,7 @@ ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE=20
 export GOPATH=$HOME/go
 export PATH="$GOPATH/bin:$HOME/bin:/sbin:/bin:/usr/sbin:/usr/bin:/usr/games:/usr/local/sbin:/usr/local/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
+[ -f ~/.cargo/env ] && source ~/.cargo/env
 
 source $ZSH/oh-my-zsh.sh
 
