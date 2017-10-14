@@ -33,6 +33,11 @@ vv() {
   line=$(vvbox|jq -r '.[]| [.state, .path, .name, .base, .id]|join(" | ")'| sort -r | column -t | fzf) && dir=$(echo $line|cut -d '|' -f2|sed 's/^ *//;s/ *$//') && cd "$dir"
 }
 
+ql() {
+  local container
+  container=$(kubectl get pod --all-namespaces --no-headers | fzf) && $(echo $container |  awk '{print "kubectl logs -f --namespace " $1 " "  $2 }')
+}
+
 function minicert() {
   for i in $(ls -1 ~/certs); do
     cat ~/certs/$i | minikube ssh "sudo mkdir -p /etc/docker/certs.d/$i && sudo tee /etc/docker/certs.d/$i/ca.crt";
