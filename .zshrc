@@ -44,4 +44,5 @@ function minicert() {
   done
 }
 
+[ -f ~/bin/helm ] && source <(helm completion zsh)
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
