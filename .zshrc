@@ -45,4 +45,5 @@ function minicert() {
 }
 
 [ -f ~/bin/helm ] && source <(helm completion zsh)
+[ -f ~/.travis/travis.sh ] && source ~/.travis/travis.sh
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
