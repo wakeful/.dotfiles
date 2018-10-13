@@ -17,3 +17,6 @@ bb() {
            fzf-tmux -d $(( 2 + $(wc -l <<< "$branches") )) +m) &&
   git checkout $(echo "$branch" | sed "s/.* //" | sed "s#remotes/[^/]*/##")
 }
+
+alias git-tmp='FILES=$(git status --short | sed "s/^[ ]//g" | egrep "^[A-Z]" | cut -d " " -f2 | fzf) && echo $FILES | xargs -L1 -t git update-index --assume-unchanged'
+alias git-undo-tmp='FILES=$(git ls-files -v | egrep "^[a-z]" | cut -d " " -f2 | fzf) && echo $FILES | xargs -L1 -t git update-index --no-assume-unchanged'
