@@ -20,3 +20,6 @@ bb() {
 
 alias git-tmp='FILES=$(git status --short | sed "s/^[ ]//g" | egrep "^[A-Z]" | cut -d " " -f2 | fzf) && echo $FILES | xargs -L1 -t git update-index --assume-unchanged'
 alias git-undo-tmp='FILES=$(git ls-files -v | egrep "^[a-z]" | cut -d " " -f2 | fzf) && echo $FILES | xargs -L1 -t git update-index --no-assume-unchanged'
+export QQ_COPY_PS1="$PS1"
+alias qq='k8s_context=$( find ~/.kube-env -type f | fzf ) && export PS1="[$(basename $k8s_context)] $QQ_COPY_PS1" && export KUBECONFIG="$k8s_context"'
+alias qd='export PS1="$QQ_COPY_PS1" && unset KUBECONFIG'
