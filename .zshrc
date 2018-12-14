@@ -4,7 +4,11 @@ ZSH_CUSTOM=$HOME/.oh-my-zsh-custom
 
 ZSH_THEME="ys"
 
-plugins=(aws docker docker-compose docker-machine dotenv git go kubectl packer terraform vagrant zsh-autosuggestions)
+plugins=(aws docker docker-compose docker-machine dotenv git go kubectl packer terraform vagrant command-time zsh-autosuggestions)
+
+ZSH_COMMAND_TIME_MIN_SECONDS=1
+ZSH_COMMAND_TIME_MSG="Time: %s sec"
+ZSH_COMMAND_TIME_COLOR="cyan"
 
 ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE=20
 
