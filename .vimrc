@@ -79,3 +79,5 @@ set list
 
 " show line numbers
 set number
+
+colorscheme nord
