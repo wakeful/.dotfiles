@@ -4,7 +4,7 @@ ZSH_CUSTOM=$HOME/.oh-my-zsh-custom
 
 ZSH_THEME="ys"
 
-plugins=(aws dotenv git golang kubectl terraform vagrant command-time zsh-autosuggestions)
+plugins=(aws dotenv git golang kubectl terraform podman vagrant command-time zsh-autosuggestions jump)
 
 ZSH_DISABLE_COMPFIX="true"
 DISABLE_AUTO_UPDATE=true
@@ -16,7 +16,7 @@ ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE=20
 
 export TF_PLUGIN_CACHE_DIR=$HOME/.plugin-cache
 export GOPATH=$HOME/go
-export PATH="$GOPATH/bin:$HOME/bin:$HOME/bin/zig:/opt/homebrew/bin:$HOME/.krew/bin:$HOME/bin/google-cloud-sdk/bin:$HOME/.cargo/bin:$HOME/.local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/usr/games:/usr/local/sbin:/usr/local/bin"
+export PATH="$GOPATH/bin:$HOME/bin:$HOME/bin/zig:$HOME/.volta/bin:/opt/homebrew/bin:$HOME/.krew/bin:$HOME/bin/google-cloud-sdk/bin:$HOME/.cargo/bin:$HOME/.local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/usr/games:/usr/local/sbin:/usr/local/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 [ -f ~/.cargo/env ] && source ~/.cargo/env
 
