@@ -1,3 +1,5 @@
+[include]
+  path = ~/.frappe.gitconfig
 [user]
 	email = aj@48k.io
 	name = AJ
@@ -13,10 +15,7 @@
 	fileMode = false
 	pager = delta
 [delta]
-    features = unobtrusive-line-numbers decorations
-    plus-color = "#012800"
-    minus-color = "#340001"
-    syntax-theme = Monokai Extended
+    features = unobtrusive-line-numbers decorations frappe
     whitespace-error-style = 22 reverse
 [interactive]
     diffFilter = delta --color-only
@@ -34,3 +33,10 @@
     file-style = bold yellow ul
     file-decoration-style = none
     hunk-header-decoration-style = yellow box
+[merge]
+	conflictStyle = zdiff3
+[diff]
+	algorithm = histogram
+	context = 10
+[init]
+	defaultBranch = master

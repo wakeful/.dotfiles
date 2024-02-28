@@ -25,3 +25,6 @@ alias qq='k8s_context=$( find ~/.kube-env -type f | fzf ) && export PS1="[$(base
 alias qd='export PS1="$QQ_COPY_PS1" && unset KUBECONFIG'
 
 alias aws-select='PROFILE=$(cat ~/.aws/credentials ~/.aws/config | egrep "^\[" | sed -E -e "s/\[|\]|\[profile //g" | sort | uniq | fzf) && export AWS_PROFILE="$PROFILE"'
+
+alias jj='ndir=$(ls -1 $MARKPATH | fzf) && cd $(readlink $MARKPATH/$ndir)'
+alias jd='ndir=$(git status -s | rev | cut -d " " -f1 | rev | xargs -L1 dirname | sort | uniq | fzf) && cd $ndir'
