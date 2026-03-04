@@ -79,5 +79,6 @@ set list
 
 " show line numbers
 set number
+set relativenumber number
 
 colorscheme nord

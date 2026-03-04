@@ -64,3 +64,8 @@ complete rmdir 'C/*/d/'
 complete chgrp 'p/1/g/'
 complete chown 'p/1/u/'
 
+
+# Added by LM Studio CLI (lms)
+setenv PATH "$PATH:/Users/jasm/.lmstudio/bin"
+# End of LM Studio CLI section
+

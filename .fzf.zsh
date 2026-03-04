@@ -20,11 +20,10 @@ bb() {
 
 alias git-tmp='FILES=$(git status --short | sed "s/^[ ]//g" | egrep "^[A-Z]" | cut -d " " -f2 | fzf) && echo $FILES | xargs -L1 -t git update-index --assume-unchanged'
 alias git-undo-tmp='FILES=$(git ls-files -v | egrep "^[a-z]" | cut -d " " -f2 | fzf) && echo $FILES | xargs -L1 -t git update-index --no-assume-unchanged'
-export QQ_COPY_PS1="$PS1"
-alias qq='k8s_context=$( find ~/.kube-env -type f | fzf ) && export PS1="[$(basename $k8s_context)] $QQ_COPY_PS1" && export KUBECONFIG="$k8s_context"'
-alias qd='export PS1="$QQ_COPY_PS1" && unset KUBECONFIG'
+alias qq='k8s_context=$(kubectl config get-contexts --no-headers  -o name | fzf) && kubectl config use-context $k8s_context'
 
 alias aws-select='PROFILE=$(cat ~/.aws/credentials ~/.aws/config | egrep "^\[" | sed -E -e "s/\[|\]|\[profile //g" | sort | uniq | fzf) && export AWS_PROFILE="$PROFILE"'
 
-alias jj='ndir=$(ls -1 $MARKPATH | fzf) && cd $(readlink $MARKPATH/$ndir)'
+alias kk='ndir=$(ls -1 $MARKPATH | fzf) && cd $(readlink $MARKPATH/$ndir)'
 alias jd='ndir=$(git status -s | rev | cut -d " " -f1 | rev | xargs -L1 dirname | sort | uniq | fzf) && cd $ndir'
+alias jt='cd $(git rev-parse --show-toplevel)'

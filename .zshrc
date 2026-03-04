@@ -14,6 +14,8 @@ ZSH_COMMAND_TIME_COLOR="cyan"
 
 ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE=20
 
+export VAGRANT_DISABLE_STRICT_DEPENDENCY_ENFORCEMENT=1
+export DISABLE_TELEMETRY=true
 export TF_PLUGIN_CACHE_DIR=$HOME/.plugin-cache
 export GOPATH=$HOME/go
 export PATH="$GOPATH/bin:$HOME/bin:$HOME/bin/zig:$HOME/.volta/bin:/opt/homebrew/bin:$HOME/.krew/bin:$HOME/bin/google-cloud-sdk/bin:$HOME/.cargo/bin:$HOME/.local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/usr/games:/usr/local/sbin:/usr/local/bin"
@@ -86,6 +88,25 @@ vterm_cmd() {
     vterm_printf "51;E$vterm_elisp"
 }
 
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/amazon-corretto-21.jdk/Contents/Home
+
+[ -f /opt/homebrew/bin/kubectl ] && source <(kubectl completion zsh)
 [ -f ~/bin/helm ] && source <(helm completion zsh | sed -E 's/\["(.+)"\]/\[\1\]/g')
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+[ -f ~/.bun/_bun ] && source ~/.bun/_bun
 autoload -U +X bashcompinit && bashcompinit
+source <(COMPLETE=zsh jj)
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '~/bin/google-cloud-sdk/path.zsh.inc' ]; then . '~/bin/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '~/bin/google-cloud-sdk/completion.zsh.inc' ]; then . '~/bin/google-cloud-sdk/completion.zsh.inc'; fi
+
+# bun completions
+[ -s "/Users/jasm/.bun/_bun" ] && source "/Users/jasm/.bun/_bun"
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/Users/jasm/.lmstudio/bin"
+# End of LM Studio CLI section
+
