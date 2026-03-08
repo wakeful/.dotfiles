@@ -1,0 +1,11 @@
+function fish_postexec --on-event fish_postexec
+    set -l min_ms (math "$fish_command_time_min_seconds * 1000")
+
+    if test $CMD_DURATION -lt $min_ms
+        return
+    end
+
+    set -l total_seconds (math --scale=0 "$CMD_DURATION / 1000")
+
+    printf (set_color $fish_command_time_color)"$fish_command_time_msg\n"(set_color normal) $total_seconds
+end

@@ -138,13 +138,18 @@ action = "ToggleFullscreen"
 key = "F"
 mods = "Command|Control"
 
+[[keyboard.bindings]]
+action = "ToggleViMode"
+key = "Space"
+mods = "Shift|Command"
+
 [scrolling]
 history = 10000
 multiplier = 3
 
 [terminal.shell]
 args = ["--login"]
-program = "/bin/zsh"
+program = "/opt/homebrew/bin/fish"
 
 [window]
 decorations = "buttonless"

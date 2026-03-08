@@ -1,0 +1,53 @@
+function fish_prompt --description 'Write out the prompt'
+    set -l last_status $status
+
+    set -l reset (set_color normal)
+    set -l blue (set_color blue)
+    set -l bold_blue (set_color --bold blue)
+    set -l cyan (set_color cyan)
+    set -l green (set_color green)
+    set -l yellow (set_color yellow)
+    set -l bold_yellow (set_color --bold yellow)
+    set -l red (set_color red)
+    set -l bold_red (set_color --bold red)
+    set -l black (set_color black)
+    set -l bg_yellow (set_color --background yellow)
+
+    echo ""
+
+    echo -ns $bold_blue "#" $reset " "
+
+    if fish_is_root_user 2>/dev/null
+        echo -ns $bg_yellow $black (whoami) $reset
+    else
+        echo -ns $cyan (whoami) $reset
+    end
+
+    echo -ns " " $reset "@ "
+    echo -ns $green (hostname -s) $reset
+
+    echo -ns " in "
+    echo -ns $bold_yellow (prompt_pwd) $reset
+
+    set -l vcs (fish_vcs_prompt "%s" 2>/dev/null)
+    if test -n "$vcs"
+        echo -ns " " $reset "on" $blue " " $reset
+        set -l branch (fish_vcs_prompt 2>/dev/null | string trim)
+        echo -ns $blue "git" $reset ":" $cyan $branch $reset
+    end
+
+    if set -q VIRTUAL_ENV
+        echo -ns " " $green (basename $VIRTUAL_ENV) $reset "%"
+    end
+
+    echo -ns " "
+    echo -ns "[" (date "+%H:%M:%S") "]"
+
+    if test $last_status -ne 0
+        echo -ns " C:" $red $last_status $reset
+    end
+
+    echo ""
+
+    echo -ns $bold_red '$ ' $reset
+end

@@ -1,0 +1,71 @@
+format = """
+$username\
+$hostname\
+$directory\
+$git_branch\
+$git_status\
+$python\
+[$time](dimmed white)\
+$status\
+$line_break\
+$cmd_duration\
+$line_break\
+$character"""
+
+right_format = """$aws"""
+
+[username]
+format = "[$user]($style) "
+style_user = "cyan bold"
+style_root = "bg:yellow fg:black bold"
+show_always = true
+
+[hostname]
+format = "@ [$hostname]($style) in "
+style = "green"
+ssh_only = false
+
+[directory]
+format = "[$path]($style) "
+style = "yellow bold"
+truncation_length = 0
+
+
+[git_branch]
+format = "on [git:](blue)[$branch]($style) "
+style = "cyan"
+
+[git_status]
+format = '([$all_status]($style))'
+style = "red"
+conflicted = "x"
+modified = "x"
+untracked = "."
+
+[aws]
+format = 'on [aws:$profile]($style) '
+style = "cyan"
+
+[python]
+format = 'via [$virtualenv]($style) '
+style = "green"
+
+[time]
+disabled = false
+format = '\[[$time]($style)\]'
+style = "dimmed white"
+time_format = "%H:%M:%S"
+
+[character]
+success_symbol = "[\\$](bold red)"
+error_symbol = "[\\$](bold red)"
+
+[status]
+format = '[$symbol$status]($style) '
+symbol = "C:"
+style = "red"
+disabled = false
+
+[cmd_duration]
+min_time = 1_000
+format = "[Time: $duration](cyan)"

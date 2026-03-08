@@ -1,0 +1,125 @@
+{
+  "agent": {
+    "default_model": {
+      "effort": "high",
+      "enable_thinking": true,
+      "model": "claude-opus-4-6",
+      "provider": "zed.dev",
+    },
+    "default_profile": "write",
+    "favorite_models": [
+      {
+        "model": "claude-opus-4.5",
+        "provider": "copilot_chat",
+      },
+      {
+        "model": "claude-3-7-sonnet",
+        "provider": "zed.dev",
+      },
+    ],
+    "model_parameters": [],
+  },
+  "auto_install_extensions": {
+    "TOML": true,
+    "Zig": true,
+  },
+  "auto_update": false,
+  "buffer_font_features": {
+    "calt": false,
+  },
+  "buffer_font_size": 20.0,
+  "colorize_brackets": true,
+  "confirm_quit": true,
+  "current_line_highlight": "all",
+  "cursor_blink": false,
+  "cursor_shape": "hollow",
+  "edit_predictions": {
+    "provider": "zed",
+  },
+  "file_types": {
+    "HCL": ["alloy"],
+  },
+  "format_on_save": "off",
+  "git": {
+    "inline_blame": {
+      "enabled": false,
+    },
+  },
+  "hard_tabs": false,
+  "hide_mouse": "on_typing_and_movement",
+  "icon_theme": "Zed (Default)",
+  "inlay_hints": {
+    "enabled": true,
+    "show_background": false,
+    "show_other_hints": false,
+    "show_parameter_hints": true,
+    "show_type_hints": false,
+    "show_value_hints": false,
+  },
+  "inline_code_actions": true,
+  "load_direnv": "disabled",
+  "lsp": {
+    "gopls": {
+      "initialization_options": {
+        "hints": {
+          "assignVariableTypes": true,
+          "compositeLiteralFields": true,
+          "compositeLiteralTypes": true,
+          "constantValues": true,
+          "functionTypeParameters": true,
+          "parameterNames": true,
+          "rangeVariableTypes": true,
+        },
+      },
+    },
+  },
+  "project_panel": {
+    "diagnostic_badges": true,
+    "dock": "right",
+    "entry_spacing": "standard",
+    "starts_open": false,
+  },
+  "relative_line_numbers": "enabled",
+  "restore_on_startup": "launchpad",
+  "scrollbar": {
+    "show": "always",
+  },
+  "show_whitespaces": "all",
+  "soft_wrap": "editor_width",
+  "sticky_scroll": {
+    "enabled": true,
+  },
+  "tab_bar": {
+    "show": true,
+  },
+  "tab_size": 2,
+  "tabs": {
+    "file_icons": false,
+    "show_close_button": "hidden",
+    "show_diagnostics": "errors",
+  },
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false,
+  },
+  "terminal": {
+    "scrollbar": {
+      "show": "always",
+    },
+    "working_directory": "current_file_directory",
+  },
+  "theme": "One Dark",
+  "title_bar": {
+    "show_menus": false,
+  },
+  "toolbar": {
+    "breadcrumbs": true,
+    "quick_actions": true,
+  },
+  "ui_font_family": ".SystemUIFont",
+  "ui_font_size": 16.0,
+  "use_system_path_prompts": false,
+  "use_system_prompts": false,
+  "vim_mode": true,
+  "when_closing_with_no_tabs": "keep_window_open",
+}

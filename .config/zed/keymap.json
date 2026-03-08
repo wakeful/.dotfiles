@@ -1,0 +1,83 @@
+[
+  {
+    "context": "Editor || Pane || ProjectPanel || Terminal || Workspace",
+    "bindings": {
+      "F1": "terminal_panel::ToggleFocus",
+      "F3": ["agent::ToggleFocus", "workspace::ToggleZoom"],
+    },
+  },
+  {
+    "context": "Workspace || Pane",
+    "bindings": {
+      "cmd-1": "project_panel::ToggleFocus",
+      "cmd-2": "outline_panel::ToggleFocus",
+      "cmd-3": "diagnostics::Deploy",
+      "cmd-4": "debug_panel::ToggleFocus",
+    },
+  },
+  {
+    "context": "ProjectPanel",
+    "bindings": {
+      "cmd-shift-f": "project_panel::NewSearchInDirectory",
+      "backspace": ["project_panel::Trash", { "skip_prompt": true }],
+      "shift-enter": "project_panel::Rename",
+    },
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "f2": "editor::GoToDiagnostic",
+      "shift-f2": "editor::GoToPreviousDiagnostic",
+      "cmd-r": ["buffer_search::Deploy", { "replace_enabled": true }],
+      "cmd-alt-l": "editor::Format",
+      "alt-s": "editor::ShowSignatureHelp",
+      "alt-d": "editor::ToggleCodeActions",
+      "alt-up": "editor::SelectLargerSyntaxNode",
+      "alt-down": "editor::SelectSmallerSyntaxNode",
+      "alt-k": "editor::SelectLargerSyntaxNode",
+      "alt-j": "editor::SelectSmallerSyntaxNode",
+    },
+  },
+  {
+    "context": "Editor && !VimWaiting && !menu",
+    "bindings": {
+      "cmd-/": [
+        "action::Sequence",
+        ["editor::ToggleComments", "editor::MoveDown"],
+      ],
+    },
+  },
+  {
+    "context": "Editor && vim_mode == insert",
+    "bindings": {
+      "alt-space": "editor::ShowCompletions",
+      "j k": "vim::NormalBefore",
+    },
+  },
+  {
+    "context": "Workspace && vim_mode != insert",
+    "bindings": {
+      "alt-h": "pane::ActivatePreviousItem",
+      "alt-l": "pane::ActivateNextItem",
+      "alt-space": "terminal_panel::ToggleFocus",
+      "cmd-shift-t": "pane::ReopenClosedItem",
+    },
+  },
+  {
+    "context": "ProjectPanel && not_editing",
+    "bindings": {
+      "h": "project_panel::CollapseSelectedEntry",
+      "j": "menu::SelectNext",
+      "k": "menu::SelectPrevious",
+      "l": "project_panel::ExpandSelectedEntry",
+      "n": "project_panel::NewFile",
+    },
+  },
+  {
+    "context": "Terminal",
+    "bindings": {
+      "cmd-n": "workspace::NewTerminal",
+      "ctrl-enter": null,
+    },
+  },
+]
