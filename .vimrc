@@ -20,22 +20,7 @@ set colorcolumn=121
 " line wrapping at 120 char
 set textwidth=120
 
-" vundle
 filetype off
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin('~/.vim/plugins')
-
-try
-  call vundle#rc()
-catch
-  echohl Error | echo "Vundle is not installed. " | echohl None
-endtry
-
-Plugin 'gmarik/Vundle.vim'
-Plugin 'scrooloose/nerdtree'
-Plugin 'sickill/vim-monokai'
-
-call vundle#end()  " required
 filetype plugin indent on " required
 
 " colors
@@ -45,7 +30,6 @@ set t_ut=
 set t_Co=256
 
 set background=dark
-colorscheme base16-railscasts
 
 highlight clear SignColumn
 highlight VertSplit ctermbg=236
@@ -80,5 +64,3 @@ set list
 " show line numbers
 set number
 set relativenumber number
-
-colorscheme nord
