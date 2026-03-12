@@ -1,5 +1,7 @@
 if status is-interactive
 # Commands to run in interactive sessions can go here
+  starship init fish | source
+  atuin init fish | source
 end
 
 set -g fish_greeting ""
@@ -40,5 +42,5 @@ alias c "clear"
 alias mkdir "mkdir -p"
 alias ssh-rebuild "cat ~/.ssh/conf.d/* > ~/.ssh/config"
 alias tmux "tmux -2"
-
-starship init fish | source
+alias l "ls -alh"
+alias ll "l"

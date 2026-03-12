@@ -106,6 +106,9 @@
     "scrollbar": {
       "show": "always",
     },
+    "shell": {
+      "program": "/opt/homebrew/bin/fish",
+    },
     "working_directory": "current_file_directory",
   },
   "theme": "One Dark",
