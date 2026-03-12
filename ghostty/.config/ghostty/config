@@ -1,3 +1,5 @@
+auto-update = off
+
 theme = Catppuccin Frappe
 
 cursor-style = block
@@ -12,7 +14,7 @@ font-size = 11
 scrollback-limit = 10000
 macos-option-as-alt = true
 
-command = /opt/homebrew/bin/fish --login
+command = /opt/homebrew/bin/fish
 
 window-decoration = false
 window-width = 140
@@ -30,12 +32,31 @@ keybind = super+n=new_window
 keybind = ctrl+a>shift+2=new_split:down
 keybind = ctrl+a>shift+|=new_split:right
 keybind = ctrl+a>z=toggle_split_zoom
+keybind = alt+d=toggle_readonly
 keybind = alt+h=goto_split:left
 keybind = alt+l=goto_split:right
 keybind = alt+k=goto_split:up
 keybind = alt+j=goto_split:down
+keybind = alt+n=goto_split:next
+keybind = alt+p=goto_split:previous
 keybind = alt+shift+h=resize_split:left,24
 keybind = alt+shift+l=resize_split:right,24
 keybind = alt+shift+k=resize_split:up,24
 keybind = alt+shift+j=resize_split:down,24
 keybind = alt+shift+space=equalize_splits
+
+undo-timeout = 42s
+keybind = super+u=undo
+
+quick-terminal-autohide = true
+quick-terminal-animation-duration = 0
+quick-terminal-position = center
+keybind = global:cmd+shift+backspace=toggle_quick_terminal
+
+macos-dock-drop-behavior = new-window
+macos-hidden = never
+macos-icon = retro
+macos-non-native-fullscreen = true
+macos-shortcuts = deny
+macos-window-buttons = hidden
+macos-window-shadow = true
