@@ -49,7 +49,7 @@
 ## which filter mode to use by default
 ## possible values: "global", "host", "session", "session-preload", "directory", "workspace"
 ## consider using search.filters to customize the enablement and order of filter modes
-# filter_mode = "global"
+filter_mode = "directory"
 
 ## With workspace filtering enabled, Atuin will filter for commands executed
 ## in any directory within a git repository tree (default: false).
@@ -143,7 +143,7 @@ style = "compact"
 show_help = false
 
 ## Configure whether or not to show tabs for search and inspect
-# show_tabs = true
+show_tabs = false
 
 ## Configure whether or not the tabs row may be auto-hidden, which includes the current Atuin
 ## tab, such as Search or Inspector, and other tabs you may wish to see. This will
@@ -230,10 +230,10 @@ keymap_mode = "vim-normal"
 
 [keys]
 # Defaults to true. If disabled, using the up/down key won't exit the TUI when scrolled past the first/last entry.
-# scroll_exits = true
+scroll_exits = false
 
 # Defaults to true. The left arrow key will exit the TUI when scrolling before the first character
-# exit_past_line_start = true
+exit_past_line_start = false
 
 # Defaults to true. The right arrow key performs the same functionality as Tab and copies the selected line to the command line to be modified.
 # accept_past_line_end = true
@@ -306,7 +306,7 @@ records = true
 ## Set to false to disable the popup.
 ## This can also be controlled with the ATUIN_TMUX_POPUP environment variable.
 ## Note: The tmux popup is currently supported in zsh, bash, and fish shells. This currently doesn't work with iTerm native tmux integration.
-# enabled = false
+enabled = false
 
 ## Width of the tmux popup window
 ## Can be a percentage, or integer (e.g. "100" means 100 characters wide)
@@ -314,7 +314,7 @@ records = true
 
 ## Height of the tmux popup window
 ## Can be a percentage, or integer (e.g. "100" means 100 lines tall)
-# height = "60%"
+height = "42%"
 
 [ui]
 ## Columns to display in the interactive search, from left to right.
@@ -356,3 +356,4 @@ records = true
 ##
 ## Make directory expand instead of command:
 # columns = ["duration", "time", { type = "directory", expand = true }, { type = "command", expand = false }]
+columns = ["exit", "duration", "command"]

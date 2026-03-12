@@ -1,0 +1,28 @@
+theme = Catppuccin Frappe
+
+cursor-style = block
+cursor-style-blink = false
+mouse-hide-while-typing = true
+mouse-reporting = false
+shell-integration-features = no-cursor
+
+font-size = 11
+
+scrollback-limit = 10000
+macos-option-as-alt = true
+
+command = /opt/homebrew/bin/fish --login
+
+window-decoration = false
+window-width = 140
+window-height = 38
+window-padding-x = 15
+window-padding-y = 15
+
+keybind = super+zero=reset_font_size
+keybind = super+equal=increase_font_size:1
+keybind = super+plus=increase_font_size:1
+keybind = super+minus=decrease_font_size:1
+keybind = super+v=paste_from_clipboard
+keybind = super+c=copy_to_clipboard
+keybind = super+n=new_window

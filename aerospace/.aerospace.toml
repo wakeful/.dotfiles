@@ -107,6 +107,10 @@ if.app-id = "org.alacritty"
 run       = "move-node-to-workspace 2"
 
 [[on-window-detected]]
+if.app-id = "com.mitchellh.ghostty"
+run       = "move-node-to-workspace 2"
+
+[[on-window-detected]]
 if.app-id = "dev.zed.Zed"
 run       = "move-node-to-workspace 3"
 
@@ -168,4 +172,3 @@ run       = "layout floating"
 7 = ["secondary", "main"]
 8 = ["secondary", "main"]
 9 = ["secondary", "main"]
-
