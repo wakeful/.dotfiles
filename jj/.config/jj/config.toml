@@ -1,0 +1,18 @@
+"$schema" = "https://jj-vcs.github.io/jj/latest/config-schema.json"
+
+[user]
+email = "aj@48k.io"
+name = "AJ"
+
+[ui]
+paginate = "auto"
+default-command = "log"
+
+[signing]
+behavior = "own"
+backend = "ssh"
+key = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIAe5edyzn5eS6YTsYdBnHSSBtYrWiI8ZgmHw/JcTIPEe"
+
+[signing.backends.ssh]
+program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
+allowed_signers = "~/.ssh/allowed_signers"

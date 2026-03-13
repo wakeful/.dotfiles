@@ -15,6 +15,7 @@
 	trustctime = false
 	fileMode = false
 	pager = delta
+	excludesfile = /Users/jasm/.gitignore_global
 [delta]
     features = unobtrusive-line-numbers decorations frappe
     whitespace-error-style = 22 reverse
