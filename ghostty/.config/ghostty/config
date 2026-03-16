@@ -60,3 +60,5 @@ macos-non-native-fullscreen = true
 macos-shortcuts = deny
 macos-window-buttons = hidden
 macos-window-shadow = true
+
+custom-shader = shaders/cursor.glsl
