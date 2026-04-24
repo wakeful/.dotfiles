@@ -11,7 +11,7 @@ shell-integration-features = no-cursor
 
 font-size = 11
 
-scrollback-limit = 10000
+scrollback-limit = 10000000000
 macos-option-as-alt = true
 
 command = /opt/homebrew/bin/fish

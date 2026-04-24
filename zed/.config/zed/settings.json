@@ -3,10 +3,11 @@
     "default_model": {
       "effort": "high",
       "enable_thinking": true,
-      "model": "claude-opus-4-6",
+      "model": "claude-opus-4-7",
       "provider": "zed.dev",
     },
     "default_profile": "write",
+    "dock": "right",
     "favorite_models": [
       {
         "model": "claude-opus-4.5",
@@ -19,6 +20,14 @@
     ],
     "model_parameters": [],
   },
+  "agent_servers": {
+    "claude-acp": {
+      "default_config_options": {
+        "model": "opus",
+      },
+      "type": "registry",
+    },
+  },
   "auto_install_extensions": {
     "TOML": true,
     "Zig": true,
@@ -28,6 +37,9 @@
     "calt": false,
   },
   "buffer_font_size": 20.0,
+  "collaboration_panel": {
+    "dock": "right",
+  },
   "colorize_brackets": true,
   "confirm_quit": true,
   "current_line_highlight": "all",
@@ -44,6 +56,9 @@
     "inline_blame": {
       "enabled": false,
     },
+  },
+  "git_panel": {
+    "dock": "right",
   },
   "hard_tabs": false,
   "hide_mouse": "on_typing_and_movement",
@@ -72,6 +87,9 @@
         },
       },
     },
+  },
+  "outline_panel": {
+    "dock": "right",
   },
   "project_panel": {
     "diagnostic_badges": true,
