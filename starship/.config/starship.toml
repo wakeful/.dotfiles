@@ -12,7 +12,7 @@ $cmd_duration\
 $line_break\
 $character"""
 
-right_format = """$aws"""
+right_format = """$kubernetes$aws"""
 
 [username]
 format = "[$user]($style) "
@@ -45,6 +45,10 @@ untracked = "."
 [aws]
 format = 'on [aws:$profile]($style) '
 style = "cyan"
+
+[kubernetes]
+format = 'on [k8s:$context]($style) '
+disabled = false
 
 [python]
 format = 'via [$virtualenv]($style) '
