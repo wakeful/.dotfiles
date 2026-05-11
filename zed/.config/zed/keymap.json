@@ -38,6 +38,7 @@
       "alt-s": "editor::ShowSignatureHelp",
       "alt-shift-h": "editor::GoToPreviousBookmark",
       "alt-shift-j": "editor::ToggleBookmark",
+      "alt-shift-k": "vim::HelixJumpToWord",
       "alt-shift-l": "editor::GoToNextBookmark",
       "alt-up": "editor::SelectLargerSyntaxNode",
       "cmd-alt-l": "editor::Format",
