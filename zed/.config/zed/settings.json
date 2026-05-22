@@ -19,6 +19,7 @@
       },
     ],
     "model_parameters": [],
+    "sidebar_side": "right",
   },
   "agent_servers": {
     "claude-acp": {
@@ -37,6 +38,7 @@
     "calt": false,
   },
   "buffer_font_size": 20.0,
+  "cli_default_open_behavior": "new_window",
   "collaboration_panel": {
     "dock": "right",
   },
@@ -45,7 +47,12 @@
   "current_line_highlight": "all",
   "cursor_blink": false,
   "cursor_shape": "hollow",
+  "debugger": {
+    "button": false,
+  },
+  "diff_view_style": "unified",
   "edit_predictions": {
+    "allow_data_collection": "no",
     "provider": "zed",
   },
   "file_types": {
@@ -58,10 +65,11 @@
     },
   },
   "git_panel": {
+    "button": false,
     "dock": "right",
   },
   "hard_tabs": false,
-  "hide_mouse": "on_typing_and_movement",
+  "hide_mouse": "on_typing_and_action",
   "icon_theme": "Zed (Default)",
   "inlay_hints": {
     "enabled": true,
@@ -89,9 +97,11 @@
     },
   },
   "outline_panel": {
+    "button": false,
     "dock": "right",
   },
   "project_panel": {
+    "button": false,
     "diagnostic_badges": true,
     "dock": "right",
     "entry_spacing": "standard",
@@ -101,6 +111,9 @@
   "restore_on_startup": "launchpad",
   "scrollbar": {
     "show": "always",
+  },
+  "search": {
+    "button": false,
   },
   "show_whitespaces": "all",
   "soft_wrap": "editor_width",
@@ -121,6 +134,7 @@
     "metrics": false,
   },
   "terminal": {
+    "button": false,
     "scrollbar": {
       "show": "always",
     },
