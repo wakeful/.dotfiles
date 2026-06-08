@@ -5,12 +5,9 @@
 	name = AJ
 	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIAe5edyzn5eS6YTsYdBnHSSBtYrWiI8ZgmHw/JcTIPEe
 [alias]
-	s = status
-	l = log --oneline
-	ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
-	ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
+	ll = log --oneline --decorate --format='%C(auto)%h%d %s %C(cyan)[%an]'
 [http]
-	sslVerify = false
+	sslVerify = true
 [core]
 	trustctime = false
 	fileMode = false
