@@ -1,0 +1,10 @@
+[
+  {
+    "label": "go: coverage",
+    "command": "go test ./... -coverprofile=coverage.out -covermode=atomic && go tool cover -html=coverage.out",
+    "cwd": "$ZED_DIRNAME",
+    "use_new_terminal": false,
+    "reveal": "never",
+    "tags": ["go-test"],
+  },
+]

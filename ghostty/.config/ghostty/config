@@ -63,3 +63,5 @@ macos-window-buttons = hidden
 macos-window-shadow = true
 
 custom-shader = shaders/cursor.glsl
+custom-shader = shaders/flag.glsl
+custom-shader-animation = always
