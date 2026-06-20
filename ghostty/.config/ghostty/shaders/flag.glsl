@@ -1,4 +1,4 @@
-const float IDLE_TIMEOUT  = 42.0;  // seconds of inactivity before activating
+const float IDLE_TIMEOUT  = 420.0;  // seconds of inactivity before activating
 const float FADE_IN_TIME  = 1.5;   // seconds to fade the effect in
 const float COLS          = 68.0;  // grid columns
 const float ROWS          = 48.0;  // grid rows

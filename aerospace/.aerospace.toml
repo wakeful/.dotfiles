@@ -75,7 +75,7 @@ alt-shift-r         = "mode resize"
 alt-shift-p         = "mode pass"
 
 [mode.pass.binding]
-esc   = "mode main"
+shift-esc = "mode main"
 
 [mode.resize.binding]
 h = "resize width -50"
