@@ -1,0 +1,178 @@
+[general]
+excluded_apps = []
+kb_layout_to_use = ""
+passthrough_unbounded_keys = false
+should_exit_after_passthrough = false
+passthrough_unbounded_keys_blacklist = []
+hide_overlay_in_screen_share = false
+exec_shell = "/opt/homebrew/bin/fish"
+exec_shell_args = ["-lc"]
+
+[theme.light]
+surface = "#EEF2FF"
+accent = "#465FBC"
+accent_alt = "#0B2377"
+on_accent_alt = "#F8FAFF"
+text = "#17327A"
+
+[theme.dark]
+surface = "#0A1338"
+accent = "#6E82D6"
+accent_alt = "#8FA2F0"
+on_accent_alt = "#081022"
+text = "#E8EEFF"
+
+[hotkeys]
+"Primary+Shift+C" = "recursive_grid"
+"Primary+Shift+S" = "scroll"
+
+[hints]
+enabled = false
+
+[grid]
+enabled = false
+
+[recursive_grid]
+enabled = true
+grid_cols = 3
+grid_rows = 3
+keys = "asdjklcnm"
+min_size_width = 1
+min_size_height = 1
+max_depth = 10
+
+[recursive_grid.animation]
+enabled = false
+
+[recursive_grid.hotkeys]
+"Escape" = "idle"
+"`" = "toggle-cursor-follow-selection"
+"Space" = "action backspace"
+"Primary+Space" = "action reset"
+"Primary+J" = "action left_click"
+"Primary+K" = "action right_click"
+"Primary+M" = "action middle_click"
+"Primary+I" = "action mouse_down"
+"Primary+U" = "action mouse_up"
+"Alt+k" = "action move_mouse_relative --dx=0 --dy=-10"
+"Alt+j" = "action move_mouse_relative --dx=0 --dy=10"
+"Alt+h" = "action move_mouse_relative --dx=-10 --dy=0"
+"Alt+l" = "action move_mouse_relative --dx=10 --dy=0"
+
+[recursive_grid.ui]
+line_width = 1
+font_size = 10
+font_family = ""
+label_background = true
+label_background_padding_x = -1
+label_background_padding_y = -1
+label_background_border_radius = -1
+label_background_border_width = 1
+sub_key_preview = false
+sub_key_preview_font_size = 8
+sub_key_preview_autohide_multiplier = 1.5
+
+[virtual_pointer]
+enabled = true
+
+[virtual_pointer.ui]
+size = 3
+
+[mouse_action_indicator]
+enabled = true
+actions = ["left_click", "right_click"]
+
+[mouse_action_indicator.ui]
+size = 36
+border_width = 2
+shape = "circle"
+
+[mouse_action_indicator.animation]
+duration_ms = 260
+start_scale = 0.55
+end_scale = 1.35
+start_opacity = 0.85
+end_opacity = 0.0
+easing = "ease_out"
+
+[scroll]
+scroll_step = 50
+scroll_step_half = 500
+scroll_step_full = 1000000
+invert_scroll = false
+
+[scroll.hotkeys]
+"Escape" = "idle"
+"k" = "action scroll_up"
+"j" = "action scroll_down"
+"h" = "action scroll_left"
+"l" = "action scroll_right"
+"gg" = "action go_top"
+"Shift+G" = "action go_bottom"
+"u" = "action page_up"
+"d" = "action page_down"
+"Primary+J" = "action left_click"
+"Primary+K" = "action right_click"
+"Alt+k" = "action move_mouse_relative --dx=0 --dy=-10"
+"Alt+j" = "action move_mouse_relative --dx=0 --dy=10"
+"Alt+h" = "action move_mouse_relative --dx=-10 --dy=0"
+"Alt+l" = "action move_mouse_relative --dx=10 --dy=0"
+
+[mode_indicator]
+
+[mode_indicator.scroll]
+enabled = true
+text = "Scroll"
+
+[mode_indicator.recursive_grid]
+enabled = true
+text = "Grid"
+
+[mode_indicator.ui]
+font_size = 10
+font_family = ""
+border_width = 1
+padding_x = -1
+padding_y = -1
+border_radius = -1
+indicator_x_offset = 20
+indicator_y_offset = 20
+
+[sticky_modifiers]
+enabled = false
+
+[sticky_modifiers.ui]
+font_size = 10
+font_family = ""
+border_width = 1
+padding_x = -1
+padding_y = -1
+border_radius = -1
+indicator_x_offset = -40
+indicator_y_offset = 20
+
+[smooth_cursor]
+move_mouse_enabled = false
+steps = 10
+max_duration = 200
+duration_per_pixel = 0.1
+
+[smooth_scroll]
+enabled = false
+steps = 20
+max_duration = 180
+duration_per_pixel = 1.00
+
+[held_repeat]
+enabled = false
+
+[systray]
+enabled = true
+
+[logging]
+log_level = "info"
+log_file = ""
+disable_file_logging = true
+max_file_size = 10
+max_backups = 5
+max_age = 30
