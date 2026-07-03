@@ -8,6 +8,7 @@
       "shift-F9": "editor::ToggleGitBlameInline",
       "F10": "git::Diff",
       "F11": "git_graph::Open",
+      "cmd-shift-o": "text_finder::Toggle",
     },
     "context": "Editor || Pane || ProjectPanel || Terminal || Workspace",
   },

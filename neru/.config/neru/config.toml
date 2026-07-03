@@ -46,7 +46,6 @@ enabled = false
 
 [recursive_grid.hotkeys]
 "Escape" = "idle"
-"`" = "toggle-cursor-follow-selection"
 "Space" = "action backspace"
 "Primary+Space" = "action reset"
 "Primary+J" = "action left_click"
