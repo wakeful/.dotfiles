@@ -1,6 +1,12 @@
 [
   {
     "bindings": {
+      "z z": "editor::OpenSelectionsInMultibuffer",
+    },
+    "context": "VimControl && !menu && multiple_selections",
+  },
+  {
+    "bindings": {
       "F1": "terminal_panel::ToggleFocus",
       "F3": ["agent::ToggleFocus", "workspace::ToggleZoom"],
       "F4": "editor::ViewBookmarks",

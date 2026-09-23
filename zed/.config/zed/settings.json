@@ -3,7 +3,7 @@
     "default_model": {
       "effort": "high",
       "enable_thinking": true,
-      "model": "claude-opus-4-8",
+      "model": "claude-opus-5",
       "provider": "zed.dev",
     },
     "default_profile": "write",
@@ -46,6 +46,9 @@
   "colorize_brackets": true,
   "confirm_quit": true,
   "current_line_highlight": "all",
+  "cursor_animation": {
+    "enabled": true
+  },
   "cursor_blink": false,
   "cursor_shape": "hollow",
   "debugger": {

@@ -1,0 +1,5 @@
+<clickhouse>
+  <prompt_by_server_display_name>
+    <default>\e[1;36m{user}\e[0m @ \e[32m{display_name}\e[0m\n:) </default>
+  </prompt_by_server_display_name>
+</clickhouse>
